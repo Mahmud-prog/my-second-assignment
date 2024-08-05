@@ -3,7 +3,8 @@
 @import url('https://fonts.cdnfonts.com/css/miama-nueva');
 body{
     font-family: "Inter", sans-serif;
-    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 5) 100%); */
+    background: linear-gradient(360.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 5) 100%);
+    color: white;
    
 }
 
@@ -45,43 +46,82 @@ justify-content: center;
 text-align: center;
 padding: 2px;
 }
+.hand-bergar{
+    display: none;
+}
 /* navbar style ends hare*/
 
+/* starts navbar responsive style  */
+@media screen and (max-width: 577px){
+    .navbar{
+      width: 100%;
+      margin: 0 auto;
+      /* justify-content: center; */
+    }
+    .nav-options{
+        display: none;
+    }
+    .hand-bergar{
+        display: block;
+        background-color: none;
+        font-size: 1.5rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+
+}
+/* ends navbar responsive style  */
+
 /* Banner styles starts hare  */
+
 .text-content{
     border: 2px solid red;
-    margin: 4.3rem;
+    /* margin: 4.3rem; */
+    width: 520px;
+height: 530px;
     /* margin-bottom: 1rem; */
 }
 .banner-content{
     border: 2px solid red;
-    /* margin: 3rem; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 3rem 5rem;
+    justify-content: space-between;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+   
     
 }
 .banner-content h1{
     font-size: 78px;
 font-weight: 900;
+/* line-height: 0px; */
 }
 .style{
     font-family: 'Miama Nueva', sans-serif;
+    /* position: relative; */
+    /* z-index: 1; */
                                                 
 }
 .banner-content p{
     text-align: start;
     margin-top: 1rem;
+    
     word-spacing: 5px;
     /* letter-spacing: 4px; */
 }
-.banner-content button{
+.btn-primary{
     margin-top: 1rem;
-    /* display: flex; */
+    display: flex;
+  
 }
 #joining{
     width: 150px;
     height: 35px;
     background: rgb(230, 83, 60);
+    justify-content: flex-start;
     border: none;
     border-radius: 2rem;
     color: aliceblue;
@@ -94,34 +134,43 @@ font-weight: 900;
     /* border: none; */
     border-radius: 2rem;
     border: 1px solid rgb(255, 255, 255);
-    /* color: aliceblue; */
-  
-}
-.img-section{
-    border: 2px solid red;
-    justify-content: center;
-    /* margin-left: 1rem; */
+    color: aliceblue; 
 }
 .btn-content{
-    margin: 0 auto;
-    display: flex;
+    border: 2px solid red;
+ color: white;
+  width: 349px;
+height: 580px;
+/* background-image: url(../images/Images\ 2.png); */
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.img-section{
+    display: grid;
     justify-content: center;
-    justify-content: space-between;
+    align-items: center;
+}
+.text-color{
+    color: white;
+ text-align: start;
 }
 #tutorial{
     border: 2px solid red;
     width: 180px;
 height: 80px;
-text-align: center;
+/* text-align: center; */
 border-radius: 1rem;
 /* border: 1px solid rgba(255, 255, 255, 0.1); */
 backdrop-filter: blur(8px);
 position: relative;
 /* position: absolute; */
 z-index: 2;
-left: 10rem;
-top: 24rem;
-margin-left: 6rem;
+left: 5rem;
+/* right: 11rem; */
+top: 7rem;
+/* margin-left: 6rem; */
 background: none;
 }
 #workout{
@@ -133,45 +182,81 @@ backdrop-filter: blur(8px);
 position: relative;
 /* position: absolute; */
 z-index: 1;
-top: 7.9rem;
-right: 1.5rem;
+right: 8.5rem;
+bottom: 8rem;
+/* top: 7rem; */
+/* left: 13rem; */
 background: none;
-
+color: white;
 }
 .size{
     font-size: 35px;
 font-weight: 800;
 }
-#images{ 
-    border: 2px solid red;
-    width: 349px;
-height: 580px;
-/* position: absolute; */
-justify-content: center;
-align-items: center;
-text-align: center;
-left: 5rem;
-/* bottom: 1.5rem; */
-position: relative;
-z-index: 1;
-
-}
-.fa-solid{
+.fa-solid {
  
-background: rgb(230, 83, 60);
+color: rgb(230, 83, 60);
 align-items: center;
 justify-content: center;
 /* text-align: center; */
 padding: 2px;
 font-size: 30px;
-border-radius: 60%;
-right: 10px;
+border-radius: 50%;
+margin-right: 10px;
 }
 #font{
     font-size: 24px;
 font-weight: 900;
+margin: 0 auto;
 }
 /* Banner styles ends hare  */
+
+/* strats banner responsiv styles  */
+@media screen and (max-width: 577px){
+    .banner-content{
+        width: 100%;
+        height: 100%;
+        display: grid;
+       grid-template-columns: 1fr;
+       margin:1rem auto;
+    }
+    .text-content{
+        width: 100%;
+height: 100%;
+margin: 1rem auto;
+    }
+    .banner-content h1{
+        font-size: 36px;
+font-weight: 900;
+    }
+    .banner-content p{
+        font-size: 16px;
+font-weight: 400;
+    }
+    .btn-content{
+       margin: 0rem auto;
+    }
+    .img-section{
+        margin-left: 10rem;
+        justify-content: center;
+    }
+    #tutorial{
+        width: 135.74px;
+height: 60.58px;/* Rectangle 17 */
+position: absolute;
+left: 32px;
+top: 800.38px;  
+    }
+    #workout{
+        width: 130.91px;
+height: 60.09px;
+/* margin-bottom: 4rem; */
+bottom: 12rem;
+margin-right: 1rem;
+    }
+   
+}
+/* ends banner responsiv styles  */
 
 /* habits section styles starts hare  */
 
@@ -180,7 +265,7 @@ font-weight: 900;
     border: 2px solid red;
     width: 90%;
 height: 501px;
-margin: 0 auto;
+margin: 3rem 5rem;
 }
 .text-habits-content{
     display: flex;
@@ -196,6 +281,7 @@ margin: 0 auto;
     font-size: 48px;
     font-weight: 900;
     text-align: center;
+    
 }
 .text-habits-content p{
 display: flex;
@@ -206,7 +292,8 @@ font-weight: 400;
 line-height: 24px;
 word-spacing: 5px;
 }
-/* image stile section  */
+
+/* image style section  */
 .habits-images-container{
     border: 2px solid red;
     width: 100%;
@@ -308,4 +395,116 @@ height: 274px;
     display: flex;
     flex-direction: column;
     padding: 2px;
+}
+
+/* habits section styles ends hare  */
+
+/* habit text responsive styles hare  */
+
+@media screen and (max-width: 577px){
+    .habits-container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .text-habits-content{
+        /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    }
+    .text-habits-content h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .text-habits-content p{
+        font-size: 15px;
+    }
+    .habits-images-container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+/* strats run section styles hare  */
+.run-extramile-container{
+    border: 2px solid red;
+    width: 1060px;
+height: 371px;
+width: 100%;
+margin: 3rem 5rem;
+display: flex;
+justify-content: space-between;
+border-radius: 18px;
+background: rgb(65, 63, 63);
+}
+.run-text-content{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 443px;
+height: 310px;
+gap: 10px;
+margin: 2rem 4rem;
+}
+.run-text-content h1{
+    font-size: 48px;
+font-weight: 900;
+}
+.run-text-content p{
+    word-spacing: 5px;
+    margin-top: 7px;
+}
+.run-text-content button{
+    border: 2px solid red;
+    width: 170px;
+height: 54px;
+border-radius: 100px;
+background: rgb(230, 83, 60);
+border: none;
+font-size: large;
+color: white;
+}
+.run-image-content{
+    margin: 3rem 3rem;
+}
+.run-image-content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+/* ends run section styles hare  */
+
+/* run section resposive start hare  */
+
+@media screen and (max-width: 577px){
+    .run-extramile-container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .run-text-content{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .run-text-content h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .run-text-content p{
+        font-size: 14px;
+    }
 }
