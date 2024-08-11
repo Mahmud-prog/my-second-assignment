@@ -141,36 +141,37 @@ font-weight: 900;
  color: white;
   width: 349px;
 height: 580px;
-/* background-image: url(../images/Images\ 2.png); */
+background-image: url(../images/Images\ 2.png);
 display: flex;
 justify-content: center;
 align-items: center;
 
 }
 .img-section{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    /* position: relative; */
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* right: 5rem; */
 }
 .text-color{
     color: white;
  text-align: start;
 }
 #tutorial{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 180px;
 height: 80px;
+color: white;
 /* text-align: center; */
 border-radius: 1rem;
-/* border: 1px solid rgba(255, 255, 255, 0.1); */
+border: 1px solid rgba(255, 255, 255, 0.1);
 backdrop-filter: blur(8px);
 position: relative;
-/* position: absolute; */
 z-index: 2;
-left: 5rem;
-/* right: 11rem; */
-top: 7rem;
-/* margin-left: 6rem; */
+/* left: 5rem; */
+right: 5rem;
+top: 8.5rem;
 background: none;
 }
 #workout{
@@ -182,10 +183,10 @@ backdrop-filter: blur(8px);
 position: relative;
 /* position: absolute; */
 z-index: 1;
-right: 8.5rem;
-bottom: 8rem;
+/* right: 8.5rem; */
+bottom: 9rem;
 /* top: 7rem; */
-/* left: 13rem; */
+left: 2rem;
 background: none;
 color: white;
 }
@@ -216,8 +217,7 @@ margin: 0 auto;
     .banner-content{
         width: 100%;
         height: 100%;
-        display: grid;
-       grid-template-columns: 1fr;
+        flex-direction: column;
        margin:1rem auto;
     }
     .text-content{
@@ -245,14 +245,15 @@ font-weight: 400;
 height: 60.58px;/* Rectangle 17 */
 position: absolute;
 left: 32px;
-top: 800.38px;  
+top: 700.38px;  
     }
     #workout{
-        width: 130.91px;
-height: 60.09px;
+        width: 150.91px;
+height: 80.09px;
 /* margin-bottom: 4rem; */
 bottom: 12rem;
-margin-right: 1rem;
+margin-left: 8rem;
+/* margin-right: 1rem; */
     }
    
 }
@@ -438,7 +439,7 @@ height: 274px;
     border: 2px solid red;
     width: 1060px;
 height: 371px;
-width: 100%;
+width: 90%;
 margin: 3rem 5rem;
 display: flex;
 justify-content: space-between;
