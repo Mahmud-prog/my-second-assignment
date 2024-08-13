@@ -3,7 +3,7 @@
 @import url('https://fonts.cdnfonts.com/css/miama-nueva');
 body{
     font-family: "Inter", sans-serif;
-    background: linear-gradient(360.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 5) 100%);
+    background: linear-gradient(360.00deg, rgb(1, 1, 1),rgba(119, 119, 119, 5) 100%);
     color: white;
    
 }
@@ -444,7 +444,9 @@ margin: 3rem 5rem;
 display: flex;
 justify-content: space-between;
 border-radius: 18px;
-background: rgb(65, 63, 63);
+/* background:none; */
+background-color:  rgb(95, 92, 92);
+/* backdrop-filter: blur(8px); */
 }
 .run-text-content{
     border: 2px solid red;
@@ -475,11 +477,12 @@ color: white;
 }
 .run-image-content{
     margin: 3rem 3rem;
+    /* bottom: 2rem; */
 }
 .run-image-content img{
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
+    width: 110%;
+    height: 105%;
+    border-radius: 2rem; 
     align-items: center;
     justify-content: center;
 }
@@ -509,3 +512,333 @@ color: white;
         font-size: 14px;
     }
 }
+
+/* BMI Calculator TEXT styles starts   */
+.BMI-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.BMI-text-content h1{
+    font-size: 48px;
+font-weight: 900;
+flex-direction: column;
+justify-content: center;
+}
+.BMI-text-content p{
+    flex-direction: column;
+justify-content: center;
+margin: 0 auto;
+}
+/* BMI Calculator TEXT styles ends */
+
+/* BMI Calculator TEXT responsive styles starts  */
+@media screen and (max-width: 577px){
+
+    .BMI-text-content{
+        margin: 1.5rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+    .BMI-text-content p{
+        margin: 0 auto;
+    }
+}
+/* BMI Calculator TEXT responsive styles ends  */
+/* BMI table style hare  */
+.BMI-container{
+    border: 2px solid red;
+    /* width: 1440px; */
+height: 487px;
+margin: 0 auto;
+margin-top: 1rem;
+display: flex;
+justify-content: space-between;
+background: rgb(74, 72, 72);
+}
+.BMI-content{
+    margin: 4rem 5rem;
+    /* border: 2px solid red;.BMI-content */
+}
+.BMI-content h3{
+    font-size: 28px;
+font-weight: 900;
+}
+.BMI-content table{
+    border-collapse: collapse;
+    justify-content: center;
+}
+.table{
+    border: 2px solid red;
+    width: 310px;
+    height: 216px;
+    /* border-collapse: collapse; */
+    margin-top: 3rem;
+    justify-content: center;
+   /* text-align: start; */
+}
+.table td, th{
+border: 1px solid	
+rgba(255, 255, 255, 0.1);
+padding: 11px 15px;
+text-align: start;
+}
+.table td{
+    color: rgba(255, 255, 255, 0.712);
+}
+/* start form style hare  */
+.BMI-content2{
+    border: 2px solid red;
+    width: 577px;
+height: 386px;
+margin: 4rem 5rem;
+gap: 1rem;
+}
+.BMI-text-content2 h3{
+    font-size: 28px;
+    font-weight: 900;
+    margin: 1rem auto;
+}
+.BMI-text-content2 p{
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 0px;
+}
+.form-content{
+display: flex;
+flex-direction: column;
+}
+.form-content1{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 577px;
+height: 48px;
+margin: 1rem 0rem;
+gap: 1rem;
+justify-content:space-between ;
+height: 48px;
+/* color: rgba(255, 255, 255, 0.808); */
+}
+.form1{
+    width: 282.5px;
+height: 48px;
+align-items: center;
+padding: 12px 40px 12px 20px;
+font-size: 16px;
+font-weight: 400;
+border-radius: 8px;
+background: none;
+background: rgba(245, 241, 241, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.form2{
+    width: 282.5px;
+    height: 48px;
+    align-items: center;
+    padding: 12px 40px 12px 20px;
+    font-size: 16px;
+font-weight: 400;
+    background: none;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(245, 241, 241, 0.1);
+    /* color: rgba(255, 255, 255, 0.904); */
+}
+.form-content2{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 577px;
+height: 48px;
+margin: 1rem 0rem;
+gap: 1rem;
+justify-content:space-between ;
+height: 48px;
+}
+.form3{
+    width: 282.5px;
+    height: 48px;
+    align-items: center;
+    padding: 12px 40px 12px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    background: none;
+    background: rgba(245, 241, 241, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.form4{
+    width: 282.5px;
+height: 48px;
+align-items: center;
+padding: 12px 40px 12px 20px;
+font-size: 16px;
+font-weight: 400;
+border-radius: 8px;
+background: none;
+background: rgba(245, 241, 241, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.6);
+}
+.form5{
+    width: 577px;
+height: 48px;
+font-size: 16px;
+font-weight: 400;
+border-radius: 8px;
+background: none;
+background: rgba(245, 241, 241, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.6);
+padding: 12px 20px 12px 20px;
+}
+.button-calculate{
+    width: 224px;
+height: 54px;
+margin: 1rem 0rem;
+border-radius: 42px;
+background: rgb(230, 83, 60);
+border: none;
+color: white;
+}
+/* ends form style hare   */
+
+/* BMI Calculator styles ends  */
+
+/* BMI table and form responsive style hare  */
+@media screen and (max-width: 577px){
+.BMI-container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.5rem auto;
+}
+.BMI-content{
+margin: 0 auto;
+}
+
+.BMI-content2{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+.BMI-text-content2{
+    margin: 0 1rem;
+}
+.form-content{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.form-content1{
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content2{
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column;    */
+    justify-content: center;
+    align-items: center;
+}
+.form1{
+    width: 170.5px;
+height: 48px;
+}
+.form2{
+    width: 170.5px;
+    height: 48px;
+}
+.form3{
+    width: 170.5px;
+    height: 48px;
+}
+.form4{
+    width: 170.5px;
+    height: 48px;
+}
+.form5{
+    width: 353px;
+height: 48px;
+justify-content: center;
+    align-items: center;
+}
+}
+/* Meat our trainer text style starts hare  */
+.meat-text-content{
+    border: 2px solid red;
+    width: 671px;
+height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 2rem; */
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.meat-text-content h1{
+    font-size: 48px;
+font-weight: 900;
+/* padding: 1rem; */
+}
+.meat-text-content p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+}
+.primary-span{
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+/* Meat our trainer text style endss hare  */
+
+/* Meat our trainer text responsive style endss hare  */
+@media screen and (max-width: 577px){
+    .meat-text-content{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    }
+    .meat-text-content h1{
+        font-size: 32px;
+        font-weight: 900;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .meat-text-content p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 10px;
+        /* inline-size: auto; */
+    }
+
+
+}
+
+
