@@ -76,14 +76,14 @@ padding: 2px;
 /* Banner styles starts hare  */
 
 .text-content{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* margin: 4.3rem; */
     width: 520px;
 height: 530px;
     /* margin-bottom: 1rem; */
 }
 .banner-content{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     width: 90%;
